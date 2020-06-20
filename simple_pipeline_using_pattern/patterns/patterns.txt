@@ -1,0 +1,1 @@
+ZABBIX_TEMPLATE %{INT:zbx_pid}:%{BASE16NUM:zbx_date}:%{BASE16FLOAT:zbx_time} %{GREEDYDATA:zbx_msg}"

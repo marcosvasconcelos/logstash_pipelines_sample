@@ -1,0 +1,8 @@
+1 - Create directory: # sudo -u logstash mkdir $LOGSTAH_HOME/patterns
+2 - Create file patterns in patterns directory: sudo -u logstash touch patterns.txt
+3 - Copy patterns from git logstash_pipelines_sample/simple__pipeline_using_pattern/patterns/patterns.txt to destination patterns file in logstash server.
+4 - Copy pipelines from git logstash_pipelines_sample/simple__pipeline_using_pattern/simple__pipeline.conf to $LOGSTAH_HOME/conf.d
+5 - Restart your logstash and activate your filebeat from zabbix_server and apache server.
+
+######
+Apache patterns are default grok filter, but ZABBIX_TEMPLATE was created using a simple models used by zabbix log writer.
