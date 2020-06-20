@@ -14,7 +14,7 @@ input {
         bootstrap_servers => "kafka-server1:9092, kafka-server2:9092"
         topics => ["topico1","topico2","topico3]
         codec => json ## especifica que a entrada é um JSON a ser manipulado
-        decorate_events => true ## Habilita capitura dos metadados do kafka
+        decorate_events => true ## Habilita captura dos metadados do kafka
     }
     
 }
