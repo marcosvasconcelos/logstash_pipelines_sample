@@ -1,1 +1,4 @@
 ZABBIX_TEMPLATE %{INT:zbx_pid}:%{BASE16NUM:zbx_date}:%{BASE16FLOAT:zbx_time} %{GREEDYDATA:zbx_msg}"
+DTH_CONTAINER %{DATE}%{SPACE}%{TIME}
+SPRING_PATTERN %{DTH_CONTAINER:timestamp}%{SPACE}%{WORD:level}%{SPACE}%{NUMBER:id}%{SPACE}---%{SPACE}\[%{GREEDYDATA:execution}\]%{SPACE}%{GREEDYDATA:classe}%{SPACE}\:%{SPACE}%{GREEDYDATA:message}
+KC_MSG (?m)^\-\-\-\-%{SPACE}(?<message>(.|\r|\n)*)
